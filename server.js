@@ -24,8 +24,6 @@ const MONGODB_URI = process.env.MONGODB_URI;
 // Fix Depreciation Warnings from Mongoose
 // May or may not need these depending on your Mongoose version
 mongoose.connect(MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
 });
 
 // Error / success
